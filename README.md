@@ -3,9 +3,9 @@ Simple FreeDOS setup, optimized for the reMarkable tablet, with CDROM support to
 <br>
 <h2>I don't want to read, give me an installer!</h2>
 An automation script is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and test if it works after installation.<br><br>
-ssh to your reMarkable and type:<br>
-<code>wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/installrmd.sh; bash ./installrmd.sh</code><br>
-and don't forget to refresh your apps in <b>oxide</b> (top left corner on your reMarkable).
+ssh to your reMarkable and type:<br><br>
+<code>wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/installrmd.sh; bash ./installrmd.sh</code><br><br>
+Don't forget to **refresh** your apps in <b>oxide</b> (top left corner on your reMarkable).
 <h2>Requirements:</h2>
 <li>reMarkable (1 or 2)
 <li><a href="https://man7.org/linux/man-pages/man1/ssh.1.html">SSH</a> access to the reMarkable (help screen on the tablet, copyright notice, scroll down to find IP and password)
