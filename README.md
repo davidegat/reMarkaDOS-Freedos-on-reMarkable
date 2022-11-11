@@ -12,6 +12,7 @@ Don't forget to refresh your apps in <b>oxide</b> (top left corner on your reMar
 <li>Toltec repositories installed (instructions @ <a href="https://toltec-dev.org/">Toltec-dev</a> website)
 <li><b>Oxide</b> launcher, <b>simple</b> scripting language, <b>yaft</b> (yet another finger terminal): <code>opkg install oxide simple yaft</code>
 <h2>HOWTO</h2>
+<li>Learn about how to <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">config BOCHS</a> emulator, to be able to adjust <b>bochsrc</b> config file for further use (mounting ISO images).
 <li><a href="https://man7.org/linux/man-pages/man1/ssh.1.html">SSH</a> to your reMarkable, and install BOCHS emulator: <code>opkg install bochs</code>, remember to install also the <b>oxide</b>, <b>yaft</b> and <b>simple</b> package if you haven't done it yet.
 <li>Unpack the zip file into a folder on your pc (for example "remarkados") and <a href="https://linux.die.net/man/1/scp">scp</a> it to your reMarkable
 <li>On reMarkable: via <a href="https://man7.org/linux/man-pages/man1/ssh.1.html">SSH</a>, move your files into a folder (for example "remarkados"), test from this folder if it works via terminal with <code>bochs -q -unlock -f bochsrc</code>. BOCHS and FreeDOS should start, if it happens, reboot your tablet and proceede with the next steps.
