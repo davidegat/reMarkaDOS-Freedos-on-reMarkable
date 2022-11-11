@@ -1,10 +1,8 @@
 clear
 if [ -d "/home/root/.entware" ]; then
-
-
 echo
 echo
-echo    reMarkaDOS by gat.
+echo reMarkaDOS by gat.
 echo
 echo This scripts does no harm, but is not generally safe
 echo to be running scripts without knowing its content!
@@ -13,13 +11,12 @@ read -p "Did you read these scripts content, and/or are you ok to run them anywa
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
-    echo
     echo Bye wise guy.
     echo
     exit 1
 fi
 echo
-read -p "You're about to download and install reMarkaDOS on this tablet. Sure? (y/N)" -n 1 -r
+read -p "You're about to download and install OXIDE launcher and reMarkaDOS on this tablet. Sure? (y/N)" -n 1 -r
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
