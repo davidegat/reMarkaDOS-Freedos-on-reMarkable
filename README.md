@@ -10,8 +10,7 @@ Simple FreeDOS setup, optimized for the reMarkable tablet, with CDROM support to
 <li>ssh to your reMarkable, and install BOCHS emulator: <code>opkg install bochs</code>
 <li>Unpack the zip file into a folder on your pc (for example "remarkados") and scp it to your reMarkable
 <li>On reMarkable: via ssh, put files into a folder (for example "remarkados"), and from it test it out with <code>bochs -q -unlock -f bochsrc</code>
-<li>Copy to reMarkable both the <b>dos.sh</b> and <b>startdos.sh</b> by scp it to /home/root folder
-<li>Register your app within <b>oxide</b> by running <code>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</code>
+<li>Copy to reMarkable both the <b>dos.sh</b> and <b>startdos.sh</b> by scp it to /home/root folder, make them executable with <code>chmod +x *.sh</code><li>Register your app within <b>oxide</b> by running <code>rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'</code>
 <li>Once done, refresh your apps on <b>oxide</b> on your tablet (top left corner of oxide UI)
 <li>Tap the FreeDOS icon to run BOCHS and FreeDOS directly from reMarkable
 <li>Use it as you like.
