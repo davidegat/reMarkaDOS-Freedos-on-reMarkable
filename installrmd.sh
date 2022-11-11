@@ -38,7 +38,7 @@ sleep 2
 echo
 echo Installing needed software from Toltec...
 echo
-opkg install bochs simple yaft oxide
+opkg install bochs simple yaft oxide rot
 echo
 echo
 echo Creating "remarkados" folder...
@@ -65,7 +65,7 @@ echo
 echo Registering your app on Oxide...
 echo
 
-echo digito il comando per registrare
+rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'echo
 echo
 read -p "Do you want to run a boot test via terminal? (Y/n)" -n 1 -r
 echo
