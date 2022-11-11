@@ -6,6 +6,7 @@ Simple FreeDOS setup, optimized for the reMarkable tablet, with CDROM support to
 <li>SSH access to the reMarkable (help screen on the tablet, copyright notice, scroll down to find)
 <li>Toltec repositories (instructions @ <a href="https://toltec-dev.org/">Toltec-dev</a> website)
 <li><b>Oxide</b> launcher and <b>simple</b> scripting language: <code>opkg install oxide simple</code>
+<li><b>yaft</b> (yet another finger terminal): <code>opkg install yaft</code>
 <h2>HOWTO</h2>
 <li>ssh to your reMarkable, and install BOCHS emulator: <code>opkg install bochs</code>, remember to install also the <b>oxide</b> and <b>simple</b> package.
 <li>Unpack the zip file into a folder on your pc (for example "remarkados") and scp it to your reMarkable
