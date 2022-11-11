@@ -65,7 +65,9 @@ echo
 echo Registering your app on Oxide...
 echo
 
-rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'echo
+rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'
+
+echo
 echo
 read -p "Do you want to run a boot test via terminal? (Y/n)" -n 1 -r
 echo
