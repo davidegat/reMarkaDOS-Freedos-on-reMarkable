@@ -16,5 +16,5 @@ Simple FreeDOS setup, optimized for the reMarkable tablet, with CDROM support to
 <li>Use it as you like, you can now transfer regular iso images.
   <h2>Install DOS software on your reMarkable</h2>
 <li>To install new software, put your files into a folder in your pc, make an ISO image out of it (on linux: <code>mkisofs -0 image.iso folder/</code>, there are specific apps for Windows too), scp it to your reMarkable in the correct folder (in the example "remarkados")
-<li>On your reMarkable: edit the <b>bochsrc<//b> file to mount ISO image (<b>bochsrc</b> in the zip file will help you understand how, remember to change the image name and path accordingly)
+<li>On your reMarkable: edit the <b>bochsrc</b> file to mount ISO image (<b>bochsrc</b> in the zip file will help you understand how, remember to change the image name and path accordingly)
 <li>Run FreeDOS from terminal or reMarkable, access the D: drive, and copy your software to the FreeDOS box with the <a href="https://home.csulb.edu/~murdock/copy.html">DOS 'copy' command</a>
