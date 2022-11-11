@@ -27,8 +27,8 @@ Don't forget to refresh your apps in <b>oxide</b> after installation (top left c
 <li>Run FreeDOS from terminal or reMarkable, access the D: drive, and copy your software to the FreeDOS box with the <a href="https://home.csulb.edu/~murdock/xcopy.html">DOS 'xcopy' command</a> (for example: <code>xcopy d:\FOLDER\ c:\FOLDER /a</code>).
   <h2>Need more space?</h2>
 <li>Ssh to your reMarkable, and rename your c.img file <code>mv c.img c-old.img</code>
-<li>Run <code>bximage</code>, a menu appears: choose "3. Resize hard disk image", when asked for source image: c-old.img, new image: c.img, input the new size (say.. 500mb)
+<li>Run <code>bximage</code>, a menu appears: choose "3. Resize hard disk image", when asked for source image: <b>c-old.img</b>, new image: <b>c.img</b>, input the new <b>size</b> (say.. 500mb)
 <li>Launch FreeDOS (better from terminal, ssh to your reMarkable and type: <code>./startdos.sh</code>)
-<li>In FreeDOS run the good old fdisk <code>fdisk</code>
-<li>Following the easy menu, add a second partition to the disk, activate it an quit.
-<li>Restart your reMarkable, and run FreeDOS again, format your new partition (for example: format d:). Now you have extra space on a second disk. Delete the c.old image <code>del c.old</code>
+<li>In FreeDOS, run the good old fdisk: <code>fdisk</code>
+<li>Follow the menu, add a second partition to the disk, activate it, and quit.
+<li>Restart your reMarkable, and run FreeDOS again, format your new partition (for example: <code>format d:</code>). Now you have extra space on a second disk. Delete the c.old image <code>del c.old</code>.
