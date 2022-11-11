@@ -2,10 +2,10 @@
 Simple FreeDOS setup, optimized for the reMarkable tablet, with CDROM support to mount own ISO image, and run old DOS software via BOCHS emulation.<br>
 <br>
 <h2>I don't want to read, give me an installer!</h2>
-An automation script is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and offers a way to test the setup. You will have a running copy of FreeDOS on reMarkable out of the box.<br><br><b>Before proceeding</b>: you MUST know what <a href="https://toltec-dev.org/">Toltec</a> repository is about, not just install it. By installing <a href="https://github.com/Eeems/oxide">oxide</a> launcher you are going to modify the way your reMarkable works. Make sure you know what you are doing. If you already use both of them, just ignore this warning and enjoy automation.<br><br>
+A sript is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and offers a way to test the setup. You will have a running copy of FreeDOS on reMarkable out of the box.<br><br><b>Before proceeding</b>: you MUST know what <a href="https://toltec-dev.org/">Toltec</a> repository is about, not just install it. By installing <a href="https://github.com/Eeems/oxide">oxide</a> launcher you are going to modify the way your reMarkable works. Make sure you know what you are doing. If you already use both of them, just ignore this warning.<br><br>
 ssh to your reMarkable and type:<br><br>
 <code>wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/installrmd.sh; bash ./installrmd.sh</code><br><br>
-Don't forget to refresh your apps in <b>oxide</b> after installation (top left corner on your reMarkable).
+Don't forget to refresh your apps in <b>oxide</b> after installation (top left corner on your oxide UI).<br><br>To install DOS software on your reMarkable, jump at the end.
 <h2>Requirements:</h2>
 <li>reMarkable (1 or 2)
 <li><a href="https://man7.org/linux/man-pages/man1/ssh.1.html">SSH</a> access to the reMarkable (help screen on the tablet, copyright notice, scroll down to find IP and password)
