@@ -2,7 +2,7 @@
 Simple FreeDOS setup, optimized for the reMarkable tablet, with CDROM support to mount own ISO image, and run old DOS software via BOCHS emulation.<br>
 <br>
 <h2>I don't want to read, give me an installer!</h2>
-An automation script is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and test if it works after installation.<br><br><b>Before proceeding</b>: you MUST know what <a href="https://toltec-dev.org/">Toltec</a> repository is about, not just install it. By installing <b>oxide</b> launcher you are going to modify the way your reMarkable works. Make sure you know what you are doing.<br><br>
+An automation script is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and test if it works after installation.<br><br><b>Before proceeding</b>: you MUST know what <a href="https://toltec-dev.org/">Toltec</a> repository is about, not just install it. By installing <a href="https://github.com/Eeems/oxide">oxide</a> launcher you are going to modify the way your reMarkable works. Make sure you know what you are doing. If you already use both of them, just ignore this warning.<br><br>
 ssh to your reMarkable and type:<br><br>
 <code>wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/installrmd.sh; bash ./installrmd.sh</code><br><br>
 Don't forget to refresh your apps in <b>oxide</b> (top left corner on your reMarkable).
@@ -12,6 +12,7 @@ Don't forget to refresh your apps in <b>oxide</b> (top left corner on your reMar
 <li>Toltec repositories installed (instructions @ <a href="https://toltec-dev.org/">Toltec-dev</a> website)
 <li><b>Oxide</b> launcher, <b>simple</b> scripting language, <b>yaft</b> (yet another finger terminal): <code>opkg install oxide simple yaft</code>
 <h2>HOWTO</h2>
+<li>You MUST know what <a href="https://toltec-dev.org/">Toltec</a> repository is about. <a href="https://github.com/Eeems/oxide">Oxide</a> launcher will to modify the way your reMarkable works. If you already use both of them, just ignore this warning.
 <li>Learn about how to <a href="https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html">config BOCHS</a> emulator, to be able to adjust <b>bochsrc</b> config file for further use (mounting ISO images).
 <li><a href="https://man7.org/linux/man-pages/man1/ssh.1.html">SSH</a> to your reMarkable, and install BOCHS emulator: <code>opkg install bochs</code>, remember to install also the <b>oxide</b>, <b>yaft</b> and <b>simple</b> package if you haven't done it yet.
 <li>Unpack the zip file into a folder on your pc (for example "remarkados") and <a href="https://linux.die.net/man/1/scp">scp</a> it to your reMarkable
