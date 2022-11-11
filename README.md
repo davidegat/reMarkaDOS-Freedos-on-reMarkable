@@ -2,7 +2,7 @@
 Simple FreeDOS setup, optimized for the reMarkable tablet, with CDROM support to mount own ISO image, and run old DOS software via BOCHS emulation.<br>
 <br>
 <h2>I don't want to read, give me an installer!</h2>
-An automation script is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and test if it works after installation.<br><br>
+An automation script is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and test if it works after installation.<br><br><b>Before proceeding</b>: you MUST know what <a href="https://toltec-dev.org/">Toltec</a> repository is about, not just install it. By installing <b>oxide</b> launcher you are going to modify the way your reMarkable works. Make sure you know what you are doing.<br><br>
 ssh to your reMarkable and type:<br><br>
 <code>wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/installrmd.sh; bash ./installrmd.sh</code><br><br>
 Don't forget to refresh your apps in <b>oxide</b> (top left corner on your reMarkable).
