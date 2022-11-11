@@ -25,3 +25,10 @@ Don't forget to refresh your apps in <b>oxide</b> after installation (top left c
 <li>To install new software, put your files into a folder in your pc, make an ISO image out of it (on linux: <code>mkisofs -0 image.iso folder/</code>, there are specific apps for Windows too), scp it to your reMarkable in the correct folder (in the example "remarkados")
 <li>On your reMarkable: edit the <b>bochsrc</b> file to mount ISO image (<b>bochsrc</b> in the zip file will help you understand how, remember to change the image name and path accordingly)
 <li>Run FreeDOS from terminal or reMarkable, access the D: drive, and copy your software to the FreeDOS box with the <a href="https://home.csulb.edu/~murdock/xcopy.html">DOS 'xcopy' command</a> (for example: <code>xcopy d:\FOLDER\ c:\FOLDER /a</code>).
+  <h2>Need more space?</h2>
+<li>Ssh to your reMarkable, and rename your c.img file <code>mv c.img c-old.img</code>
+<li>Run <code>bximage</code>, a menu appears: choose "3. Resize hard disk image", when asked for source image: c-old.img, new image: c.img, input the new size (say.. 500mb)
+<li>Launch FreeDOS (better from terminal, ssh to your reMarkable and type: <code>./startdos.sh</code>)
+<li>In FreeDOS run the good old fdisk <code>fdisk</code>
+<li>Following the easy menu, add a second partition to the disk, activate it an quit.
+<li>Restart your reMarkable, and run FreeDOS again, format your new partition (for example: format d:). Now you have extra space on a second disk. Delete the c.old image <code>del c.old</code>
