@@ -4,7 +4,7 @@ FreeDOS is under the <a href="https://www.gnu.org/licenses/gpl.html">GNU General
 
 <h2>I don't want to read, give me an installer!</h2>
 A script is available: it checks if <a href="https://toltec-dev.org/">Toltec</a> repository is present, download needed software, register your app on <b>oxide</b>, and offers a way to test the setup. You will have a running copy of <a href="https://www.freedos.org/">FreeDOS</a> on reMarkable out of the box.<br><br><b>Before proceeding</b>: you MUST know what <a href="https://toltec-dev.org/">Toltec</a> repository is about, not just install it. By installing <a href="https://github.com/Eeems/oxide">oxide</a> launcher you are going to modify the way your reMarkable works. Make sure you know what you are doing. If you already use both of them, just ignore this warning.<br><br>
-ssh to your reMarkable and type:<br><br>
+ssh to your reMarkable and type or paste the following:<br><br>
 <code>wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/installrmd.sh; bash ./installrmd.sh</code><br><br>
 Don't forget to refresh your apps in <b>oxide</b> after installation (top left corner on your oxide UI). To install DOS software on your reMarkable, follow instructions at the end.
 <h2>Requirements:</h2>
