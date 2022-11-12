@@ -61,7 +61,7 @@ if [ -d "/home/root/.entware" ]; then
     echo DONE! Refresh apps in oxide to enjoy FreeDOS on reMarkable!
     echo
     echo
-    read -p "Do you want to test FreeDOS via terminal -you must reboot after that- ? (Y/n)" -n 1 -r
+    read -p "Do you want to run FreeDOS via terminal? Please reboot after the test. (Y/n)" -n 1 -r
     echo
         if [[ ! $REPLY =~ ^[Nn]$ ]]
             then
