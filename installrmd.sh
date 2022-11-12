@@ -32,7 +32,7 @@ if [ -d "/home/root/.entware" ]; then
     echo
     echo Proceeding...
     echo
-    echo Getting oftware from Toltec if needed...
+    echo Getting software from Toltec if needed...
     echo
         opkg install bochs simple yaft oxide rot
     echo
@@ -61,11 +61,16 @@ if [ -d "/home/root/.entware" ]; then
     echo DONE! Refresh apps in oxide to enjoy FreeDOS on reMarkable!
     echo
     echo
-    echo Do you want to test the installation?
-    read -p "Please reboot reMarkable after the test. (Y/n)" -n 1 -r
+    read -p "Do you want to test the installation? (Y/n)" -n 1 -r
     echo
         if [[ ! $REPLY =~ ^[Nn]$ ]]
             then
+            clear
+            echo
+            echo 
+            echo Your FreeDOS setup will start in 5 seconds, ctrl-c to stop.
+            echo Remember to reboot reMarkable after the test.
+            sleep 5
             bochs -q -unlock -f bochsrc
         fi    
 else
