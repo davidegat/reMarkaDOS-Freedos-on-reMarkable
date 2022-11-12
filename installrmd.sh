@@ -53,7 +53,7 @@ if [ -d "/home/root/.entware" ]; then
         clear
     echo
     echo
-    echo Registering FreeDOS app on Oxide...
+    echo Registering FreeDOS app...
     echo
         rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'
     echo
@@ -61,7 +61,8 @@ if [ -d "/home/root/.entware" ]; then
     echo DONE! Refresh apps in oxide to enjoy FreeDOS on reMarkable!
     echo
     echo
-    read -p "Do you want to run FreeDOS via terminal? Please reboot after the test. (Y/n)" -n 1 -r
+    echo Do you want to test the installation?
+    read -p "Please reboot reMarkable after the test. (Y/n)" -n 1 -r
     echo
         if [[ ! $REPLY =~ ^[Nn]$ ]]
             then
@@ -70,10 +71,8 @@ if [ -d "/home/root/.entware" ]; then
 else
     echo
     echo
-    echo Unable to continue.
-    echo
     echo Toltec repositories are not installed.
-    echo Follow the instructions at https://toltec-dev.org and come back.
+    echo Follow instructions at https://toltec-dev.org and come back.
     echo
     echo Bye.
     echo
