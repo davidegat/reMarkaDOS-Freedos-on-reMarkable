@@ -5,8 +5,8 @@ if [ -d "/home/root/.entware" ]; then
     echo
     echo reMarkaDOS script by gat.
     echo
-    echo This scripts does no harm, but is not generally safe
-    echo to run scripts without knowing what they do!
+    echo This scripts shoud do no harm, but is not generally safe
+    echo to run scripts on your tablet without knowing what they do!
     echo
     read -p "Did you read, and/or are you ok to run the scripts anyway? (y/N)" -n 1 -r
     echo
@@ -18,7 +18,7 @@ if [ -d "/home/root/.entware" ]; then
         fi
     echo
 # User awareness about oxide
-    read -p "Install OXIDE launcher, BOCHS and FreeDOS on this tablet. Sure? (y/N)" -n 1 -r
+    read -p "Install OXIDE launcher, BOCHS and FreeDOS on reMarkable. Sure? (y/N)" -n 1 -r
     echo
         if [[ ! $REPLY =~ ^[Yy]$ ]]
             then
@@ -40,13 +40,19 @@ if [ -d "/home/root/.entware" ]; then
     echo Creating "remarkados" folder...
     echo
         mkdir remarkados
-    echo Downloading and extracting...
+    echo Downloading files from github...
     echo
     echo
         wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/dos.sh
         wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/startdos.sh
+        wget https://raw.githubusercontent.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/main/LICENSE.md
         chmod +x *.sh
         cd remarkados
+        echo
+        echo
+        echo Extracting files...
+        echo
+        echo
         wget https://github.com/davidegat/reMarkaDOS-Freedos-on-reMarkable/raw/main/reMarkaDOS-Bochs.zip
         unzip reMarkaDOS-Bochs.zip
         rm -rf reMarkaDOS-Bochs.zip
