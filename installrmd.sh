@@ -1,14 +1,14 @@
 clear
 # Check Toltec or die
 if [ -d "/home/root/.entware" ]; then
+    echo Toltec repositories ... OK!
     echo
-    echo
-    echo reMarkaDOS by gat.
+    echo reMarkaDOS script by gat.
     echo
     echo This scripts does no harm, but is not generally safe
-    echo to be running scripts without knowing its content!
+    echo to run scripts without knowing what they do!
     echo
-    read -p "Did you read these scripts content, and/or are you ok to run them anyway? (y/N)" -n 1 -r
+    read -p "Did you read, and/or are you ok to run the scripts anyway? (y/N)" -n 1 -r
     echo
         if [[ ! $REPLY =~ ^[Yy]$ ]]
             then
@@ -18,7 +18,7 @@ if [ -d "/home/root/.entware" ]; then
         fi
     echo
 # User awareness about oxide
-    read -p "You're about to download and install OXIDE launcher and reMarkaDOS on this tablet. Sure? (y/N)" -n 1 -r
+    read -p "Install OXIDE launcher, BOCHS and FreeDOS on this tablet. Sure? (y/N)" -n 1 -r
     echo
         if [[ ! $REPLY =~ ^[Yy]$ ]]
             then
@@ -30,10 +30,9 @@ if [ -d "/home/root/.entware" ]; then
         fi
     echo
     echo
-    echo Toltec repositories OK!
     echo Proceeding...
     echo
-    echo Installing software from Toltec if needed...
+    echo Getting oftware from Toltec if needed...
     echo
         opkg install bochs simple yaft oxide rot
     echo
@@ -54,15 +53,15 @@ if [ -d "/home/root/.entware" ]; then
         clear
     echo
     echo
-    echo Registering your app on Oxide...
+    echo Registering FreeDOS app on Oxide...
     echo
         rot apps call registerApplication 'QVariantMap:{"name": "FreeDOS", "bin": "/home/root/dos.sh"}'
     echo
     echo
-    echo DONE! Refresh your apps in oxide to enjoy your reMarkaDOS!
+    echo DONE! Refresh apps in oxide to enjoy FreeDOS on reMarkable!
     echo
     echo
-    read -p "Do you want to run a boot test via terminal? (Y/n)" -n 1 -r
+    read -p "Do you want to test FreeDOS via terminal -you must reboot after that- ? (Y/n)" -n 1 -r
     echo
         if [[ ! $REPLY =~ ^[Nn]$ ]]
             then
