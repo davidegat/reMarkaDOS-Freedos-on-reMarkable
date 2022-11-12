@@ -40,4 +40,4 @@ After running <code>fdisk</code> on your FreeDOS, a menu activates:<br>
 2. Change an existing partition on the fixed disk.<br>
 3. Delete an existing partition on the fixed disk.<br>
 4. Display current partition information.<br><br>
-Type 1, enter, and follow the instructions to create a new partition.<br>fdisk will give the new partition a drive letter (example: D:), after the partition is made, exit fdisk and reboot.<br>Boot FreeDOS again, and format the new partition with <code>format d:</code>.
+Type 1, enter, and follow the instructions to create a new partition.<br>fdisk will give the new partition a drive letter (example "d:"), after the partition is made, exit fdisk and reboot reMarkable.<br>Boot FreeDOS again, and format the new partition with <code>format d:</code> (change drive accordingly).
