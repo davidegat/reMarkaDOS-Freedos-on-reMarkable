@@ -32,4 +32,12 @@ Don't forget to refresh your apps in <b>oxide</b> after installation (top left c
 <li>Launch FreeDOS (better from terminal, ssh to your reMarkable and type: <code>./startdos.sh</code>)
 <li>In FreeDOS, run the good old fdisk: <code>fdisk</code>
 <li>Follow the menu, add a second partition to the disk, activate it, and quit.
-<li>Restart your reMarkable, and run FreeDOS again, format your new partition (for example: <code>format e:</code>). Now you have extra space on a second disk. Delete the c-old.img image <code>del c-old.img</code>.
+<li>Restart your reMarkable, and run FreeDOS again, format your new partition. Now you have extra space on a second disk. Delete the c-old.img image <code>del c-old.img</code>.
+<h2>I need help with fdisk and format</h2>
+After running <code>fdisk</code> on your FreeDOS, a menu activates:<br>
+<br>
+1. Create DOS partitions on the fixed disk. Using this option, you can create more than one logical drive on one physical fixed disk.<br>
+2. Change an existing partition on the fixed disk.<br>
+3. Delete an existing partition on the fixed disk.<br>
+4. Display current partition information.<br><br>
+Type 1, enter, and follow the instructions to create a new partition.<br>fdisk will give a new partition a drive letter (example: D:), after the partition is made, exit fdisk and reboot.<br>Boot FreeDOS again, and format the new partition with <code>format d:</code>.
