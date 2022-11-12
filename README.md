@@ -31,4 +31,4 @@ Don't forget to refresh your apps in <b>oxide</b> after installation (top left c
 <li>Launch FreeDOS (better from terminal, ssh to your reMarkable and type: <code>./startdos.sh</code>)
 <li>In FreeDOS, run the good old fdisk: <code>fdisk</code>
 <li>Follow the menu, add a second partition to the disk, activate it, and quit.
-<li>Restart your reMarkable, and run FreeDOS again, format your new partition (for example: <code>format e:</code>). Now you have extra space on a second disk. Delete the c.old image <code>del c.old</code>.
+<li>Restart your reMarkable, and run FreeDOS again, format your new partition (for example: <code>format e:</code>). Now you have extra space on a second disk. Delete the c-old.img image <code>del c-old.img</code>.
